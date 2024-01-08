@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  postgresql:
+    image: postgres
+    container_name: login-ports
+    ports:
+      - 5432:5432
+    # restart: unless-stopped
+    environment:
+      POSTGRES_PASSWORD: securePassword
